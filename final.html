@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+        }
+        .hero img {
+            width: 60%;
+            height: auto;
+        }
+        .hero-content {
+            width: 35%;
+            padding: 20px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .book-now {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .description, .amenities, .reviews, .host, .rules {
+            margin-top: 40px;
+        }
+        .gallery img {
+            width: 30%;
+            margin-right: 5px;
+        }
+        footer {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Chatbot Icon Style */
+        .chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #FF5A5F;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .chatbot-icon:hover {
+            background-color: #e14a4f;
+        }
+        .chatbot-icon img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="logo"><h1>Airbnb</h1></div>
+    <div class="nav">
+        <a href="#">Explore</a>
+        <a href="#">Become a Host</a>
+        <a href="#">Help</a>
+        <a href="#">Login</a>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="https://cdn.houseplansservices.com/content/oklm6skashaqg17gerc1otpqj3/w991x660.jpg?v=10" alt="Main Listing Image">
+        <div class="hero-content">
+            <h2>Cozy Cottage in the Heart of the Countryside</h2>
+            <p>Entire home hosted by John</p>
+            <p>4 guests · 2 bedrooms · 2 beds · 1 bath</p>
+            <p class="price">$120/night</p>
+            <button class="book-now">Book Now</button>
+        </div>
+    </div>
+
+    <!-- Property Description -->
+    <div class="description">
+        <h3>About this space</h3>
+        <p>
+            Relax in this peaceful countryside cottage. Perfect for a family getaway or a quiet weekend escape, 
+            located near hiking trails and local attractions.
+        </p>
+    </div>
+
+    <!-- Amenities Section -->
+    <div class="amenities">
+        <h3>Amenities</h3>
+        <ul>
+            <li>Free Wi-Fi</li>
+            <li>Fully equipped kitchen</li>
+            <li>Free parking</li>
+            <li>Washer & dryer</li>
+            <li>Pet-friendly</li>
+        </ul>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+        <h3>Photo Gallery</h3>
+        <img src="https://media.cntraveler.com/photos/61a60b14e663d9fce4b711c1/1:1/w_800,h_801,c_limit/Airbnb%2039271504.jpg" alt="Gallery Image 1">
+        <img src="https://a0.muscache.com/im/pictures/81dca5d6-5a86-49bc-8eca-4a8610a07d27.jpg" alt="Gallery Image 2">
+        <img src="https://a0.muscache.com/im/pictures/3b638d62-baa9-4bea-ba33-58c5ca4bbccb.jpg?im_w=480" alt="Gallery Image 3">
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews">
+        <h3>Reviews</h3>
+        <p>★ 4.9 (120 reviews)</p>
+        <p>"Amazing stay, the cottage was cozy and clean!" - Sarah</p>
+        <p>"Perfect location for a quiet weekend." - Mike</p>
+    </div>
+
+    <!-- Host Information -->
+    <div class="host">
+        <h3>Hosted by John</h3>
+        <p>John has been hosting since 2017 and loves providing guests with a peaceful experience.</p>
+        <p>Response time: Typically responds within an hour</p>
+    </div>
+
+    <!-- Rules Section -->
+    <div class="rules">
+        <h3>House Rules</h3>
+        <ul>
+            <li>Check-in after 3 PM</li>
+            <li>No smoking</li>
+            <li>No parties or events</li>
+            <li>Quiet hours after 10 PM</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Airbnb, Inc. All rights reserved · Terms · Privacy</p>
+</footer>
+
+<!-- Chatbot Icon -->
+<a href="https://app.vectorshift.ai/chatbots/deployed/66f57cf51de4f80d095d4e01?conversation=66f57fe21de4f80d095d4eff" target="_blank">
+    <div class="chatbot-icon">
+        <img src="https://1000logos.net/wp-content/uploads/2017/08/Color-Airbnb-Logo.jpg" alt="Chatbot Icon">
+    </div>
+</a>
+
+</body>
+</html>
